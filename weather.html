@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top d-flex justify-content-between">
+            <i class="fa-solid fa-bars"></i>
+            <div class="searchbox">
+                <input type="text" id="searchcity" class="search" placeholder="search place">
+                <button type="button" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </header>
+    <div id="body">
+        <section class="now" id="main01">
+            <div class="main-weather">
+                <div class="city-name">김포시</div>
+                <div class="now-info">
+                    <div class="now-date">
+                        <P>년월일(요일)</P>
+                    </div>
+                    <div class="temp-icon row">
+                        <div class="temp col-6">
+                            <span>24ºC</span>
+                            <div class="temp-mami"><span>maxº</span>/<span>minº</span></div>
+                            <div class="temp-feel">체감온도 28º</div>
+                        </div>
+                        <div class="icon col-6">
+                            <img src="img/day-sunny.png" alt="1">
+                        </div>
+                    </div>     
+                </div>
+                <div class="des-weather">
+                    <p>대체로 흐림</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="air" id="main02">
+            <div class="row air-info">
+                <div class="col-6 aqi">
+                    <span>대기질<h3 id="aqi">좋아혀</h3></span>             
+                </div>
+                <div class="col-6 humi">
+                    <span>습도<h3>90%</h3></span>   
+                </div>
+            </div>
+        </section>
+
+        <section class="time" id="main03">
+            <P class="main03-first">시간별</P>
+            <div class="timebox weather-slick d-flex">
+                <div class="now-time"><p>오늘</p></div>
+                <!-- loop -->
+                <div class="time-content">
+                    <p class="time-3hours">00시</p>
+                    <div class="time-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="time-temp">
+                        온도º
+                    </div>
+                </div>
+                <!-- /loop -->
+                <!-- loop -->
+                <div class="time-content">
+                    <p class="time-3hours">00시</p>
+                    <div class="time-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="time-temp">
+                        온도º
+                    </div>
+                </div>
+                <!-- /loop -->
+                <!-- loop -->
+                <div class="time-content">
+                    <p class="time-3hours">00시</p>
+                    <div class="time-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="time-temp">
+                        온도º
+                    </div>
+                </div>
+                <!-- /loop -->
+                <!-- loop -->
+                <div class="time-content">
+                    <p class="time-3hours">00시</p>
+                    <div class="time-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="time-temp">
+                        온도º
+                    </div>
+                </div>
+                <!-- /loop -->
+                <!-- loop -->
+                <div class="time-content">
+                    <p class="time-3hours">00시</p>
+                    <div class="time-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="time-temp">
+                        온도º
+                    </div>
+                </div>
+                <!-- /loop -->
+            </div>
+        </section>
+        <section class="day" id="main04">
+            <p>요일별</p>
+            <div class="daybox weather-slick2">
+                <!-- loop -->
+                <div class="day-content">
+                    <p>MON</p>
+                    <div class="day-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="day-rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="wind">풍속m/s</div>
+                    <div class="day-temp">
+                        온도º
+                    </div>
+                    
+                </div>
+                <!-- /loop -->
+                <!-- loop -->
+                <div class="day-content">
+                    <p>MON</p>
+                    <div class="day-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="day-rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="wind">풍속m/s</div>
+                    <div class="day-temp">
+                        온도º
+                    </div>
+                    
+                </div>
+                <!-- /loop -->
+                <!-- loop -->
+                <div class="day-content">
+                    <p>MON</p>
+                    <div class="day-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="day-rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="wind">풍속m/s</div>
+                    <div class="day-temp">
+                        온도º
+                    </div>
+                    
+                </div>
+                <!-- /loop -->
+                <!-- loop -->
+                <div class="day-content">
+                    <p>MON</p>
+                    <div class="day-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="day-rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="wind">풍속m/s</div>
+                    <div class="day-temp">
+                        온도º
+                    </div>
+                    
+                </div>
+                <!-- /loop -->
+                <!-- loop -->
+                <div class="day-content">
+                    <p>MON</p>
+                    <div class="day-icon">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <div class="day-rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>강량%</span>
+                    </div>
+                    <div class="wind">풍속m/s</div>
+                    <div class="day-temp">
+                        온도º
+                    </div>
+                    
+                </div>
+                <!-- /loop -->
+            </div>
+        </section>
+        
+        <section class="sun" id="main05">
+            <div class="row sun-info">
+                <div class="col-6 rise">
+                    <span>해 뜨는 시간<h3>0시00분</h3></span>    
+                </div>
+                <div class="col-6 set">
+                    <span>해 지는 시간<h3>0시00분</h3></span>    
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            Copyright &copy; yjjy's weather app
+            <p>i made this super cool app</p>
+            <div class="sns">
+                <a href="#" class="insta"></a>
+                <a href="#" class="kakao"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
